@@ -52,15 +52,15 @@ const AboutPage = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-[#FDFBF7] pt-24 pb-20 font-sans">
-            <div className="container mx-auto px-6 md:px-12 lg:px-24">
+        <div className="w-full min-h-screen bg-[#FDFBF7] pt-20 md:pt-24 pb-16 md:pb-20 font-sans">
+            <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-24">
 
                 {/* Header Section */}
-                <div className="text-center mb-16 max-w-4xl mx-auto">
+                <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
                     <motion.span
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-primary font-bold tracking-widest text-xs uppercase mb-4 block"
+                        className="text-primary font-bold tracking-widest text-xs uppercase mb-3 md:mb-4 block"
                     >
                         Who We Are
                     </motion.span>
@@ -68,7 +68,7 @@ const AboutPage = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-black mb-6"
+                        className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 md:mb-6"
                     >
                         About Us
                     </motion.h1>
@@ -76,20 +76,20 @@ const AboutPage = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed"
+                        className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed px-4"
                     >
                         We are a catalyst for change, empowering women and youth to lead with confidence and purpose.
                     </motion.p>
                 </div>
 
                 {/* Navigation Tabs */}
-                <div className="flex justify-center mb-16 overflow-x-auto">
-                    <div className="bg-white/50 backdrop-blur-xl rounded-full p-1.5 inline-flex shadow-sm border border-white/60">
+                <div className="flex justify-center mb-12 md:mb-16 overflow-x-auto pb-2 scrollbar-hide">
+                    <div className="bg-white/50 backdrop-blur-xl rounded-full p-1.5 inline-flex shadow-sm border border-white/60 min-w-max">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-500 relative whitespace-nowrap ${activeTab === tab.id ? 'text-white' : 'text-gray-500 hover:text-gray-900'
+                                className={`px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-bold transition-all duration-500 relative whitespace-nowrap ${activeTab === tab.id ? 'text-white' : 'text-gray-500 hover:text-gray-900'
                                     }`}
                             >
                                 {activeTab === tab.id && (
@@ -392,7 +392,7 @@ const AboutPage = () => {
                                 {/* Donors */}
                                 <div>
                                     <h2 className="text-3xl font-bold mb-10 text-center">Our Donors</h2>
-                                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
                                         {[
                                             "Andrea Woodside", "Dawn Hofberg", "Kevin Jessup", "Andrew Rubinger",
                                             "Deborah Dean", "Kimberly Agan", "Anjuli Solanki", "Francis X Tracy",
@@ -401,8 +401,8 @@ const AboutPage = () => {
                                             "F-Prime Capital", "Natalie REKSTAD", "Claire Evans", "Katherine Conway",
                                             "Robert Warner", "Daniele Viappiani", "Katie Bunten-Wamaru", "Yasu Fukui"
                                         ].map((donor, i) => (
-                                            <div key={i} className="bg-[#FAF7F5] p-6 rounded-2xl flex items-center justify-center text-center hover:shadow-md transition-all border border-[#EAE0D5] group aspect-[3/2]">
-                                                <span className="font-serif font-bold text-gray-800 text-lg group-hover:text-primary transition-colors">{donor}</span>
+                                            <div key={i} className="bg-[#FAF7F5] p-4 rounded-xl flex items-center justify-center text-center hover:shadow-md transition-all border border-[#EAE0D5] group aspect-square">
+                                                <span className="font-serif font-medium text-gray-800 text-sm group-hover:text-primary transition-colors">{donor}</span>
                                             </div>
                                         ))}
                                     </div>

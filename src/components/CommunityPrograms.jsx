@@ -197,16 +197,16 @@ const CommunityPrograms = () => {
 
                                 {/* LAYERED SECTION 1: PROBLEM - Scaled Down */}
                                 <div className="relative mb-16">
-                                    <div className="w-full md:w-[85%] h-[350px] overflow-hidden rounded-[24px]">
+                                    <div className="w-full md:w-[85%] h-[250px] md:h-[350px] overflow-hidden rounded-[24px]">
                                         <img
                                             src={program.problem.image}
                                             alt="Context"
                                             className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000 transform hover:scale-105"
                                         />
                                     </div>
-                                    <div className="md:absolute md:top-1/2 md:right-0 md:transform md:-translate-y-1/2 md:-translate-x-6 w-full md:w-[420px] bg-white/80 backdrop-blur-xl p-6 md:p-8 rounded-[20px] shadow-lg border border-white/50 mt-[-40px] md:mt-0 relative z-10 mx-auto w-[90%]">
+                                    <div className="md:absolute md:top-1/2 md:right-0 md:transform md:-translate-y-1/2 md:-translate-x-6 w-full md:w-[420px] bg-white/80 backdrop-blur-xl p-5 md:p-8 rounded-[20px] shadow-lg border border-white/50 mt-[-40px] md:mt-0 relative z-10 mx-auto max-w-[90%]">
                                         <span className="block text-primary font-bold tracking-widest uppercase text-[10px] mb-2">The Challenge</span>
-                                        <h2 className="text-2xl font-bold mb-3">{program.problem.title}</h2>
+                                        <h2 className="text-xl md:text-2xl font-bold mb-3">{program.problem.title}</h2>
                                         <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                                             {program.problem.text}
                                         </p>
@@ -215,16 +215,16 @@ const CommunityPrograms = () => {
 
                                 {/* LAYERED SECTION 2: SOLUTION - Scaled Down */}
                                 <div className="relative mb-16 flex flex-col md:flex-row justify-end text-right">
-                                    <div className="w-full md:w-[85%] h-[350px] overflow-hidden rounded-[24px] order-1 md:order-2">
+                                    <div className="w-full md:w-[85%] h-[250px] md:h-[350px] overflow-hidden rounded-[24px] order-1 md:order-2">
                                         <img
                                             src={program.solution.image}
                                             alt="Solution"
                                             className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000 transform hover:scale-105"
                                         />
                                     </div>
-                                    <div className="md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 md:translate-x-6 w-full md:w-[420px] bg-black/90 backdrop-blur-xl p-6 md:p-8 rounded-[20px] shadow-lg mt-[-40px] md:mt-0 relative z-10 mx-auto w-[90%] order-2 md:order-1 text-left">
+                                    <div className="md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 md:translate-x-6 w-full md:w-[420px] bg-black/90 backdrop-blur-xl p-5 md:p-8 rounded-[20px] shadow-lg mt-[-40px] md:mt-0 relative z-10 mx-auto max-w-[90%] order-2 md:order-1 text-left">
                                         <span className="block text-primary font-bold tracking-widest uppercase text-[10px] mb-2">Our Methodology</span>
-                                        <h2 className="text-2xl font-bold text-white mb-3">{program.solution.title}</h2>
+                                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3">{program.solution.title}</h2>
                                         <div className="flex flex-col gap-2 text-gray-300 leading-relaxed text-sm md:text-base">
                                             {program.solution.text.map((p, i) => (
                                                 <p key={i}>{p}</p>
@@ -234,26 +234,26 @@ const CommunityPrograms = () => {
                                 </div>
 
                                 {/* IMMERSIVE IMPACT STORY CAROUSEL */}
-                                <div className="max-w-5xl mx-auto bg-white rounded-[24px] p-6 md:p-10 shadow-md relative overflow-hidden min-h-[500px]">
+                                <div className="max-w-5xl mx-auto bg-white rounded-[24px] p-5 md:p-10 shadow-md relative overflow-hidden min-h-[400px] md:min-h-[500px]">
                                     <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[60px] pointer-events-none -mt-20 -mr-20" />
 
                                     <div className="flex justify-between items-center mb-6 relative z-10">
-                                        <div className="flex items-center gap-3">
-                                            <div className="w-6 h-1 bg-black" />
-                                            <span className="text-base font-medium tracking-tight">Impact Stories</span>
+                                        <div className="flex items-center gap-2 md:gap-3">
+                                            <div className="w-4 md:w-6 h-1 bg-black" />
+                                            <span className="text-sm md:text-base font-medium tracking-tight">Impact Stories</span>
                                         </div>
 
                                         {/* Carousel Controls */}
                                         <div className="flex gap-2">
                                             <button
                                                 onClick={() => setCurrentStoryIndex((prev) => (prev - 1 + program.stories.length) % program.stories.length)}
-                                                className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors"
+                                                className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors text-sm md:text-base"
                                             >
                                                 ←
                                             </button>
                                             <button
                                                 onClick={() => setCurrentStoryIndex((prev) => (prev + 1) % program.stories.length)}
-                                                className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors"
+                                                className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-black hover:text-white transition-colors text-sm md:text-base"
                                             >
                                                 →
                                             </button>
@@ -267,36 +267,36 @@ const CommunityPrograms = () => {
                                             animate={{ opacity: 1, x: 0 }}
                                             exit={{ opacity: 0, x: -20 }}
                                             transition={{ duration: 0.3 }}
-                                            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative z-10"
+                                            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative z-10"
                                         >
                                             <div>
-                                                <h2 className="text-3xl md:text-4xl font-bold mb-2">{program.stories[currentStoryIndex].title}</h2>
-                                                <p className="text-lg text-gray-400 mb-6">{program.stories[currentStoryIndex].subtitle}</p>
+                                                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">{program.stories[currentStoryIndex].title}</h2>
+                                                <p className="text-base md:text-lg text-gray-400 mb-4 md:mb-6">{program.stories[currentStoryIndex].subtitle}</p>
 
-                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
                                                     {program.stories[currentStoryIndex].sections.map((section, idx) => (
-                                                        <div key={idx} className="border-l-2 border-gray-100 pl-4">
-                                                            <h4 className="font-bold text-sm mb-1">{section.title}</h4>
+                                                        <div key={idx} className="border-l-2 border-gray-100 pl-3 md:pl-4">
+                                                            <h4 className="font-bold text-xs md:text-sm mb-1">{section.title}</h4>
                                                             <p className="text-gray-600 text-xs md:text-sm">{section.text}</p>
                                                         </div>
                                                     ))}
                                                 </div>
 
-                                                <blockquote className="text-lg font-medium italic text-gray-900 border-l-4 border-primary pl-4 py-2">
+                                                <blockquote className="text-base md:text-lg font-medium italic text-gray-900 border-l-4 border-primary pl-3 md:pl-4 py-2">
                                                     "{program.stories[currentStoryIndex].quote}"
                                                 </blockquote>
                                             </div>
 
-                                            <div className="relative h-[300px] w-full rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                                            <div className="relative h-[250px] md:h-[300px] w-full rounded-xl overflow-hidden group cursor-pointer shadow-lg">
                                                 <img
                                                     src={program.stories[currentStoryIndex].videoThumbnail}
                                                     alt="Video Story"
                                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                                 />
                                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
-                                                    <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform duration-300">
-                                                        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
-                                                            <svg className="w-4 h-4 text-black ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                                    <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform duration-300">
+                                                        <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                                                            <svg className="w-3 h-3 md:w-4 md:h-4 text-black ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                                                                 <path d="M8 5v14l11-7z" />
                                                             </svg>
                                                         </div>

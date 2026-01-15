@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 :root {
     --color-primary: #F76711;
@@ -11,6 +11,16 @@ body {
     font-family: var(--font-sans);
     background-color: var(--color-bg-light);
     color: #333;
+}
+
+/* Hide scrollbar for horizontal scrolling elements */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }
 
 @theme {
