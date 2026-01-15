@@ -3,7 +3,7 @@ import CommunityPrograms from '../components/CommunityPrograms';
 
 const CommunityProgramsPage = () => {
     return (
-        <div className="w-full min-h-screen bg-[#F4F4F4]">
+        <div className="w-full min-h-screen bg-[#FDFBF7]">
             <CommunityPrograms />
         </div>
     );

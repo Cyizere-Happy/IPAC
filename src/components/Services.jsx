@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <section className="bg-white py-28 px-8 md:px-16 lg:px-32">
+        <section className="bg-[#FDFBF7] py-28 px-8 md:px-16 lg:px-32">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
                 {/* Visual Column (Empty to match design negative space or just text) */}
                 <div className="flex flex-col gap-3">

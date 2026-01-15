@@ -138,7 +138,7 @@ const CommunityPrograms = () => {
     }, [activeTab]);
 
     return (
-        <section className="bg-[#F4F4F4] min-h-screen font-sans text-gray-900 pb-16">
+        <section className="bg-[#FDFBF7] min-h-screen font-sans text-gray-900 pb-16">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 pt-12">
 
                 {/* Minimalist Tabs - Reduced Spacing */}

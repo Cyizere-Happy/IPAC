@@ -52,7 +52,7 @@ const AboutPage = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-[#F4F4F4] pt-24 pb-20 font-sans">
+        <div className="w-full min-h-screen bg-[#FDFBF7] pt-24 pb-20 font-sans">
             <div className="container mx-auto px-6 md:px-12 lg:px-24">
 
                 {/* Header Section */}

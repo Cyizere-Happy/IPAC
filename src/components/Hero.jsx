@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section className="relative w-full flex flex-col md:flex-row items-center justify-between px-8 md:px-16 lg:px-32 pt-10 md:pt-16 pb-10 bg-[#F4F4F4] overflow-hidden">
+        <section className="relative w-full flex flex-col md:flex-row items-center justify-between px-8 md:px-16 lg:px-32 pt-10 md:pt-16 pb-10 bg-[#FDFBF7] overflow-hidden">
 
             {/* Content Left */}
             <div className="w-full md:w-[45%] flex flex-col gap-5 z-10">

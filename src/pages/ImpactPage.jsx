@@ -3,7 +3,7 @@ import Journey from '../components/Journey';
 
 const ImpactPage = () => {
     return (
-        <div className="w-full min-h-screen bg-[#F4F4F4] pt-16 pb-16 px-6 md:px-12 lg:px-24">
+        <div className="w-full min-h-screen bg-[#FDFBF7] pt-16 pb-16 px-6 md:px-12 lg:px-24">
 
             {/* 10 Years of Impact Summary */}
             <div className="max-w-4xl mb-6">
