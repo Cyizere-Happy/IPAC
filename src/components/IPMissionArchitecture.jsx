@@ -6,19 +6,19 @@ const IPMissionArchitecture = () => {
 
     const carouselImages = [
         {
-            url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
-            title: "Architecture",
-            subtitle: "The interior of the apartments."
+            url: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+            title: "Innovation",
+            subtitle: "Fostering creative thinking and IP awareness."
         },
         {
-            url: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800",
-            title: "Workspace",
-            subtitle: "Modern collaborative areas."
+            url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+            title: "Collaboration",
+            subtitle: "Building a community of IP advocates."
         },
         {
-            url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800",
-            title: "Design",
-            subtitle: "Architectural excellence."
+            url: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+            title: "Education",
+            subtitle: "Workshops on intellectual property rights."
         }
     ];
 
@@ -55,10 +55,10 @@ const IPMissionArchitecture = () => {
                     {/* Left: Date/Created */}
                     <div className="lg:col-span-2">
                         <div className="text-[10px] font-medium uppercase tracking-[0.15em] leading-loose text-gray-400">
-                            Date<br />
-                            <span className="text-black font-bold">20.11.2018</span><br /><br />
-                            Created<br />
-                            <span className="text-black font-bold">2017</span>
+                            Founded<br />
+                            <span className="text-black font-bold">15.09.2024</span><br /><br />
+                            Established<br />
+                            <span className="text-black font-bold">2024</span>
                         </div>
                     </div>
 
@@ -70,23 +70,23 @@ const IPMissionArchitecture = () => {
                             viewport={{ once: true }}
                             className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight text-black"
                         >
-                            Comfortable <br />
-                            zoning in one <br />
-                            open space.
+                            Intellectual <br />
+                            Property <br />
+                            Awareness Club.
                         </motion.h2>
                     </div>
 
                     {/* Right: Architecture Info */}
                     <div className="lg:col-span-4 flex flex-col md:flex-row lg:flex-col gap-8">
                         <div>
-                            <h4 className="text-[10px] font-black uppercase tracking-[0.2em] mb-3 text-black">Architecture</h4>
+                            <h4 className="text-[10px] font-black uppercase tracking-[0.2em] mb-3 text-black">Our Mission</h4>
                             <p className="text-sm text-gray-500 font-medium leading-relaxed max-w-[200px]">
-                                The interior of the apartments in the color of Siena.
+                                Building a culture of intellectual property awareness and protection.
                             </p>
                         </div>
                         <div className="lg:mt-6">
                             <p className="text-sm text-gray-500 font-medium leading-relaxed max-w-[200px]">
-                                Combinations give warmth to such strict materials.
+                                Educating students on the value of innovation and creativity.
                             </p>
                         </div>
                     </div>
@@ -184,11 +184,11 @@ const IPMissionArchitecture = () => {
                                 <div className="w-9 h-9 rounded-full border border-black flex items-center justify-center group-hover:bg-black transition-all">
                                     <div className="w-0 h-0 border-t-[4px] border-t-transparent border-l-[7px] border-l-black group-hover:border-l-white border-b-[4px] border-b-transparent ml-1" />
                                 </div>
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-black">Play Document</span>
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-black">Learn More</span>
                             </button>
 
                             <p className="text-[10px] text-gray-400 font-medium uppercase tracking-[0.15em] leading-relaxed max-w-[300px]">
-                                The interior was created for a young couple and the main task was comfortable zoning in one open space.
+                                Empowering RCA's technical elite to secure their legacy.
                             </p>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ const IPMissionArchitecture = () => {
                         <div className="relative">
                             <div className="absolute -top-20 -left-10 w-[1px] h-36 bg-gray-200 rotate-[25deg] origin-bottom" />
                             <span className="text-[120px] font-black leading-none tracking-tighter text-black">
-                                07
+                                01
                             </span>
                         </div>
                     </div>
