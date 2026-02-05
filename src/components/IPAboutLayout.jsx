@@ -7,35 +7,35 @@ const aboutItems = [
         title: "The Mission",
         subtitle: "IP Awareness",
         description: "Empowering Rwanda's next generation of tech leaders to protect their innovations from day one.",
-        icon: "🎯"
+        icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" strokeWidth="2" /><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round" /></svg>
     },
     {
         id: 2,
         title: "The Vision",
         subtitle: "Global Standards",
         description: "Setting a national benchmark for student-led intellectual property advocacy and creative rights.",
-        icon: "👁️"
+        icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" strokeWidth="2" /><circle cx="12" cy="12" r="3" strokeWidth="2" /></svg>
     },
     {
         id: 3,
         title: "The Values",
         subtitle: "Integrity & Innovation",
         description: "We believe that true innovation requires the courage to build and the wisdom to protect.",
-        icon: "⚖️"
+        icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z" strokeWidth="2" strokeLinejoin="round" /><path d="M2 17l10 5 10-5M2 12l10 5 10-5" strokeWidth="2" strokeLinejoin="round" /></svg>
     },
     {
         id: 4,
         title: "The Strategy",
         subtitle: "Campus Clinics",
         description: "Providing hands-on legal audits and copyright workshops for every student project at RCA.",
-        icon: "⚡"
+        icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" strokeWidth="2" strokeLinejoin="round" /></svg>
     },
     {
         id: 5,
         title: "The Impact",
         subtitle: "Future Founders",
         description: "Transforming technical skill into secure, monetizable assets for 50+ active members.",
-        icon: "💎"
+        icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" strokeWidth="2" strokeLinejoin="round" /></svg>
     }
 ];
 
