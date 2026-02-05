@@ -201,10 +201,10 @@ const CommunityPrograms = () => {
                                             className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000 transform hover:scale-105"
                                         />
                                     </div>
-                                    <div className="md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 md:translate-x-6 w-full md:w-[420px] bg-black/90 backdrop-blur-xl p-5 md:p-8 rounded-[20px] shadow-lg mt-[-40px] md:mt-0 relative z-10 mx-auto max-w-[90%] order-2 md:order-1 text-left">
+                                    <div className="md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 md:translate-x-6 w-full md:w-[420px] bg-white/90 backdrop-blur-xl p-5 md:p-8 rounded-[20px] shadow-lg mt-[-40px] md:mt-0 relative z-10 mx-auto max-w-[90%] order-2 md:order-1 text-left border border-white/50">
                                         <span className="block text-primary font-bold tracking-widest uppercase text-[10px] mb-2">Our Methodology</span>
-                                        <h2 className="text-xl md:text-2xl font-bold text-white mb-3">{program.solution.title}</h2>
-                                        <div className="flex flex-col gap-2 text-gray-300 leading-relaxed text-sm md:text-base">
+                                        <h2 className="text-xl md:text-2xl font-bold text-black mb-3">{program.solution.title}</h2>
+                                        <div className="flex flex-col gap-2 text-gray-600 leading-relaxed text-sm md:text-base">
                                             {program.solution.text.map((p, i) => (
                                                 <p key={i}>{p}</p>
                                             ))}

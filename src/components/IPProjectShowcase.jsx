@@ -85,7 +85,7 @@ const IPProjectShowcase = () => {
             <div className="absolute top-24 left-0 right-0 z-20 flex justify-center items-center pointer-events-none px-4">
                 <div className="flex items-center gap-6 md:gap-12">
                     <span className="text-4xl md:text-7xl font-black text-black opacity-100 tracking-tighter">INNOVATION</span>
-                    <span className="text-xl md:text-3xl font-light text-gray-400">vs</span>
+                    <span className="text-2xl md:text-4xl font-black text-yellow-400" style={{ WebkitTextStroke: '2px black', textShadow: '0 0 15px rgba(250, 204, 21, 0.8)' }}>vs</span>
                     <span className="text-4xl md:text-7xl font-black text-white opacity-100 tracking-tighter">PROTECTION</span>
                 </div>
             </div>

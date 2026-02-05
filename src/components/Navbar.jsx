@@ -50,7 +50,7 @@ const Navbar = () => {
         { name: 'Overview', path: '/' },
         { name: 'About Us', path: '/about' },
         { name: 'Journey', path: '/impact' },
-        { name: 'Programs', path: '/programs' },
+        { name: 'Projects', path: '/programs' },
         { name: 'Blog', path: '/blog' },
         { name: 'Gallery', path: '/gallery' },
     ];
