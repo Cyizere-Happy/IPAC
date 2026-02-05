@@ -15,15 +15,42 @@ const IPHero = () => {
                     <div className="absolute inset-0 bg-black/20" />
                 </div>
 
-                {/* Massive Typography */}
+                {/* Massive Typography with Staggered Entrance */}
                 <div className="absolute inset-0 flex items-center justify-start px-12 md:px-24">
                     <motion.h1
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[15vw] md:text-[20vw] font-black text-white leading-none tracking-tighter opacity-90 drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]"
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            visible: {
+                                transition: {
+                                    staggerChildren: 0.15,
+                                    delayChildren: 0.2
+                                }
+                            }
+                        }}
+                        className="text-[15vw] md:text-[20vw] font-black text-white leading-none tracking-tighter opacity-90 transition-all duration-700 drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex"
                     >
-                        IPAC
+                        {"IPAC".split("").map((char, index) => (
+                            <motion.span
+                                key={index}
+                                variants={{
+                                    hidden: { opacity: 0, y: 50, scale: 0.8 },
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        scale: 1,
+                                        transition: {
+                                            type: "spring",
+                                            damping: 12,
+                                            stiffness: 100
+                                        }
+                                    }
+                                }}
+                                className="inline-block"
+                            >
+                                {char}
+                            </motion.span>
+                        ))}
                     </motion.h1>
                 </div>
 

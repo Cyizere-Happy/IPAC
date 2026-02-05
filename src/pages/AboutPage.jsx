@@ -1,4 +1,3 @@
-import React from 'react';
 import IPAboutLayout from '../components/IPAboutLayout';
 
 const AboutPage = () => {

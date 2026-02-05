@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
-import Hero from './components/Hero';
+import IPHero from './components/IPHero';
 import Services from './components/Services';
-import DarkSection from './components/DarkSection';
-import Mission from './components/Mission';
+import IPMissionArchitecture from './components/IPMissionArchitecture';
 import Footer from './components/Footer';
 import ImpactPage from './pages/ImpactPage';
 import CommunityProgramsPage from './pages/CommunityProgramsPage';
@@ -16,10 +15,9 @@ import GalleryPage from './pages/GalleryPage';
 
 const Home = () => (
     <>
-        <Hero />
+        <IPHero />
         <Services />
-        <DarkSection />
-        <Mission />
+        <IPMissionArchitecture />
     </>
 );
 
