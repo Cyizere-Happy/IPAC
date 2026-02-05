@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Hero from './components/Hero';
@@ -26,25 +26,33 @@ const Home = () => (
 function App() {
     return (
         <Router>
-            <div className="min-h-screen bg-[#F8F8F8]">
-                <ScrollToTop /> {/* Added ScrollToTop component */}
-                <Navbar />
-                {/* Global padding for fixed navbar */}
-                <div className="pt-28"> {/* Added padding wrapper */}
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<AboutPage />} /> {/* Reordered */}
-                        <Route path="/programs" element={<CommunityProgramsPage />} /> {/* Reordered */}
-                        <Route path="/impact" element={<ImpactPage />} /> {/* Reordered */}
-                        <Route path="/blog" element={<BlogPage />} />
-                        <Route path="/blog/:id" element={<BlogPostPage />} />
-                        <Route path="/gallery" element={<GalleryPage />} /> {/* Added Gallery route */}
-                    </Routes>
-                </div>
-                <Footer />
-            </div>
+            <AppContent />
         </Router>
     );
 }
+
+const AppContent = () => {
+    const location = useLocation();
+    const isProgramsPage = location.pathname === '/programs';
+
+    return (
+        <div className="min-h-screen bg-white">
+            <ScrollToTop />
+            <Navbar />
+            <div className={isProgramsPage ? "" : "pt-28"}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/programs" element={<CommunityProgramsPage />} />
+                    <Route path="/impact" element={<ImpactPage />} />
+                    <Route path="/blog" element={<BlogPage />} />
+                    <Route path="/blog/:id" element={<BlogPostPage />} />
+                    <Route path="/gallery" element={<GalleryPage />} />
+                </Routes>
+            </div>
+            {!isProgramsPage && <Footer />}
+        </div>
+    );
+};
 
 export default App;

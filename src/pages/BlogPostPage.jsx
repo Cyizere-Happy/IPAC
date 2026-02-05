@@ -46,7 +46,7 @@ const BlogPostPage = () => {
     if (!post) return <div className="text-center py-20">Post not found</div>;
 
     return (
-        <div className="min-h-screen bg-[#F8F8F8] font-sans">
+        <div className="min-h-screen bg-white font-sans">
             {/* Hero Section with Overlay */}
             <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 z-10" />

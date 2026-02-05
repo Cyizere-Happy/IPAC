@@ -39,7 +39,7 @@ const galleryImages = [
 
 const GalleryPage = () => {
     return (
-        <div className="min-h-screen bg-[#F8F8F8] overflow-x-hidden pt-8 md:pt-12">
+        <div className="min-h-screen bg-white overflow-x-hidden pt-8 md:pt-12">
 
             {/* Header / Intro */}
             <div className="container mx-auto px-4 md:px-6 text-center mb-12 md:mb-16">

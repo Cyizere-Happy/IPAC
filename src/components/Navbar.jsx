@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../assets/ResonateLogo.png';
 
 const Navbar = () => {
     const location = useLocation();
@@ -118,9 +117,6 @@ const Navbar = () => {
                             ${isCollapsed ? 'opacity-0 max-w-0 overflow-hidden' : 'opacity-100 max-w-[200px] ml-2'}
                         `}
                     >
-                        <button className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-black/80 transition-colors shadow-md hidden sm:block whitespace-nowrap">
-                            Get Started
-                        </button>
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -190,12 +186,6 @@ const Navbar = () => {
                         </div>
                     </nav>
 
-                    {/* Mobile Menu Footer */}
-                    <div className="p-6 border-t border-gray-100">
-                        <button className="w-full bg-black text-white px-6 py-3 rounded-xl text-base font-bold hover:bg-black/80 transition-colors shadow-md">
-                            Get Started
-                        </button>
-                    </div>
                 </div>
             </div>
         </>

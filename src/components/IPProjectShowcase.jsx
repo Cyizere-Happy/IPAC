@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
@@ -65,8 +65,16 @@ const IPProjectShowcase = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const activeProject = projects[currentIndex];
 
+    // Auto-cycling projects
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % projects.length);
+        }, 6000); // 6 second cycle
+        return () => clearInterval(interval);
+    }, []);
+
     return (
-        <section className="relative min-h-[80vh] bg-white overflow-hidden font-sans border-b border-gray-100">
+        <section className="relative min-h-screen bg-white overflow-hidden font-sans border-b border-gray-100 flex items-center">
             {/* Split Background */}
             <div className="absolute inset-0 flex">
                 <div className="w-1/2 bg-white" />
@@ -74,15 +82,15 @@ const IPProjectShowcase = () => {
             </div>
 
             {/* Vertical Split Header */}
-            <div className="absolute top-8 left-0 right-0 z-20 flex justify-center items-center pointer-events-none">
-                <div className="flex items-center gap-12">
-                    <span className="text-5xl font-black text-black opacity-100 tracking-tighter">INNOVATION</span>
-                    <span className="text-2xl font-light text-gray-400">vs</span>
-                    <span className="text-5xl font-black text-white opacity-100 tracking-tighter">PROTECTION</span>
+            <div className="absolute top-24 left-0 right-0 z-20 flex justify-center items-center pointer-events-none px-4">
+                <div className="flex items-center gap-6 md:gap-12">
+                    <span className="text-4xl md:text-7xl font-black text-black opacity-100 tracking-tighter">INNOVATION</span>
+                    <span className="text-xl md:text-3xl font-light text-gray-400">vs</span>
+                    <span className="text-4xl md:text-7xl font-black text-white opacity-100 tracking-tighter">PROTECTION</span>
                 </div>
             </div>
 
-            <div className="relative z-10 container mx-auto px-6 pt-24 pb-12">
+            <div className="relative z-10 container mx-auto px-6 pt-56 pb-12">
 
                 {/* Project Navigation */}
                 <div className="flex justify-center mb-10">
@@ -109,7 +117,7 @@ const IPProjectShowcase = () => {
                         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                         className="flex flex-col items-center"
                     >
-                        <div className="relative w-full max-w-6xl mt-10">
+                        <div className="relative w-full max-w-6xl mt-4">
 
                             {/* Central Device/Mockup */}
                             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
