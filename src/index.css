@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 :root {
-    --color-primary: #F76711;
-    --color-bg-light: #F4F4F4;
+    --color-primary: #111111;
+    --color-bg-light: #F8F8F8;
     --font-sans: 'Jost', system-ui, sans-serif;
 }
 
 body {
     font-family: var(--font-sans);
     background-color: var(--color-bg-light);
-    color: #333;
+    color: #111111;
 }
 
 /* Hide scrollbar for horizontal scrolling elements */
@@ -24,7 +24,9 @@ body {
 }
 
 @theme {
-    --color-primary: #F76711;
-    --color-secondary: #000000;
+    --color-primary: #111111;
+    --color-secondary: #444444;
     --color-accent: #FFFFFF;
+    --color-grey-light: #EEEEEE;
+    --color-grey-dark: #222222;
 }

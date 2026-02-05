@@ -57,7 +57,8 @@ const Navbar = () => {
     ];
 
     // Determine if navbar should be collapsed
-    const isCollapsed = scrolled && !isHovered;
+    const isProgramsPage = location.pathname === '/programs';
+    const isCollapsed = (scrolled && !isHovered) || isProgramsPage;
 
     return (
         <>
@@ -68,17 +69,16 @@ const Navbar = () => {
                         flex items-center pointer-events-auto border border-white/40
                         transition-all duration-700 ease-in-out
                         ${isCollapsed ? 'px-4 py-3 gap-0' : 'px-3 py-2 pl-6 gap-2'}
+                        ${isProgramsPage ? '!bg-white shadow-none border-none !fixed !left-6 !top-6 !rounded-xl !px-6 !py-4' : ''}
                     `}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     {/* Logo */}
                     <Link to="/" className="flex-shrink-0">
-                        <img
-                            src={Logo}
-                            alt="Resonate Logo"
-                            className="h-8 w-auto object-contain transition-all duration-700"
-                        />
+                        <div className="flex items-center gap-2">
+                            <span className="text-2xl font-black tracking-tighter text-primary">IPAC</span>
+                        </div>
                     </Link>
 
                     {/* Links - fade out when collapsed */}
@@ -118,7 +118,7 @@ const Navbar = () => {
                             ${isCollapsed ? 'opacity-0 max-w-0 overflow-hidden' : 'opacity-100 max-w-[200px] ml-2'}
                         `}
                     >
-                        <button className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-orange-600 transition-colors shadow-md hidden sm:block whitespace-nowrap">
+                        <button className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-black/80 transition-colors shadow-md hidden sm:block whitespace-nowrap">
                             Get Started
                         </button>
                         {/* Mobile Menu Button */}
@@ -154,7 +154,7 @@ const Navbar = () => {
                 <div className="flex flex-col h-full">
                     {/* Mobile Menu Header */}
                     <div className="flex items-center justify-between p-6 border-b border-gray-100">
-                        <img src={Logo} alt="Resonate Logo" className="h-8" />
+                        <span className="text-xl font-black tracking-tighter text-black">IPAC Logo</span>
                         <button
                             onClick={() => setMobileMenuOpen(false)}
                             className="p-2 rounded-full hover:bg-gray-100 transition-colors"
@@ -192,7 +192,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Footer */}
                     <div className="p-6 border-t border-gray-100">
-                        <button className="w-full bg-primary text-white px-6 py-3 rounded-xl text-base font-bold hover:bg-orange-600 transition-colors shadow-md">
+                        <button className="w-full bg-black text-white px-6 py-3 rounded-xl text-base font-bold hover:bg-black/80 transition-colors shadow-md">
                             Get Started
                         </button>
                     </div>

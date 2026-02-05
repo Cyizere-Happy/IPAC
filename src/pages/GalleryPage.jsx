@@ -4,42 +4,42 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 // Gallery images with stories
 const galleryImages = [
     {
-        src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
-        story: "Grace's first workshop - the moment she discovered her voice and decided to run for local office."
-    },
-    {
-        src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop",
-        story: "Our team celebrating 10,000 women reached. A milestone that changed everything."
-    },
-    {
-        src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop",
-        story: "Leadership training in Kigali - where confidence meets opportunity."
-    },
-    {
-        src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600&auto=format&fit=crop",
-        story: "Claire negotiating her 50% raise. This is what empowerment looks like."
-    },
-    {
-        src: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=600&auto=format&fit=crop",
-        story: "Breaking barriers together - our first cohort of women entrepreneurs."
-    },
-    {
         src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
-        story: "Partnership summit 2023 - 120 organizations united for change."
+        story: "IPAC's first campus workshop - students learning about the power of copyright."
+    },
+    {
+        src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&auto=format&fit=crop",
+        story: "Our team celebrating our first 50 members. A milestone that started our journey."
+    },
+    {
+        src: "https://images.unsplash.com/photo-1523240715181-2c0b9f2966a9?q=80&w=600&auto=format&fit=crop",
+        story: "Collaborative coding sessions - where innovation meets legal protection."
+    },
+    {
+        src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop",
+        story: "Martin presenting his vision for student-led IP advocacy at RCA."
+    },
+    {
+        src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop",
+        story: "Peer-to-peer mentoring on patent basics and software licensing."
+    },
+    {
+        src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&auto=format&fit=crop",
+        story: "Closing the gap between technical skill and legal awareness."
     },
     {
         src: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600&auto=format&fit=crop",
-        story: "The smile that started it all - our very first participant in 2014."
+        story: "The smile that started it all - our very first meetup in 2026."
     },
     {
         src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600&auto=format&fit=crop",
-        story: "Storytelling workshop - where women learned to own their narratives."
+        story: "Legal experts visiting RCA to mentor the next generation of founders."
     },
 ];
 
 const GalleryPage = () => {
     return (
-        <div className="min-h-screen bg-[#FDFBF7] overflow-x-hidden pt-8 md:pt-12">
+        <div className="min-h-screen bg-[#F8F8F8] overflow-x-hidden pt-8 md:pt-12">
 
             {/* Header / Intro */}
             <div className="container mx-auto px-4 md:px-6 text-center mb-12 md:mb-16">
@@ -57,7 +57,7 @@ const GalleryPage = () => {
                     transition={{ delay: 0.2, duration: 0.8 }}
                     className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4"
                 >
-                    Capturing the stories, the drive, and the transformative journey of over 40,000 participants and partners.
+                    Capturing the stories, the drive, and the transformative journey of our members and partners.
                 </motion.p>
             </div>
 
@@ -155,7 +155,7 @@ const Card = ({ item }) => {
                 <img src={item.src} alt="Gallery" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white">
-                    <p className="font-bold text-base md:text-lg mb-1 md:mb-2">Resonate Impact</p>
+                    <p className="font-bold text-base md:text-lg mb-1 md:mb-2">IPAC Moments</p>
                     <p className="text-[10px] md:text-xs text-white/90 leading-relaxed line-clamp-2">{item.story}</p>
                 </div>
             </div>

@@ -46,7 +46,7 @@ const BlogPostPage = () => {
     if (!post) return <div className="text-center py-20">Post not found</div>;
 
     return (
-        <div className="min-h-screen bg-[#FDFBF7] font-sans">
+        <div className="min-h-screen bg-[#F8F8F8] font-sans">
             {/* Hero Section with Overlay */}
             <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 z-10" />
@@ -83,7 +83,7 @@ const BlogPostPage = () => {
                         margin-top: 4rem;
                         margin-bottom: 1.5rem;
                         padding-left: 1.5rem;
-                        border-left: 6px solid #FF6B00; /* Resonate Orange */
+                        border-left: 6px solid #111111; /* IPAC Black */
                         position: relative;
                     }
                     .blog-content p {
@@ -102,7 +102,7 @@ const BlogPostPage = () => {
                         color: #4B5563;
                     }
                     .blog-content a {
-                        color: #FF6B00;
+                        color: #111111;
                         text-decoration: underline;
                         text-underline-offset: 4px;
                     }

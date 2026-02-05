@@ -4,30 +4,30 @@ import { motion } from 'framer-motion';
 const Journey = () => {
     const milestones = [
         {
-            title: "Discovery",
-            desc: "Reflection on 10 years of milestones that shaped Resonate.",
+            title: "Inception",
+            desc: "IPAC founded at Rwanda Coding Academy.",
             x: 100,
             y: 350,
             labelPos: "top",
         },
         {
-            title: "Expansion",
-            desc: "Expanding to reach rural communities in Rwanda.",
+            title: "Community",
+            desc: "Grew to 50+ active members in 3 months.",
             x: 300,
             y: 280,
             labelPos: "bottom",
         },
         {
-            title: "Validation",
-            desc: "Impact validated through Randomized Control Trial.",
-            x: 420, // Shifted further from 500
+            title: "Awareness",
+            desc: "Conducted first campus-wide IP workshop.",
+            x: 420,
             y: 200,
             labelPos: "top",
         },
         {
-            title: "Partnerships",
-            desc: "100+ organizational partnerships built.",
-            x: 650, // Shifted further from 700
+            title: "Protection",
+            desc: "Helping students secure their first copyrights.",
+            x: 650,
             y: 120,
             labelPos: "bottom",
         },
@@ -81,8 +81,8 @@ const Journey = () => {
                                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-lg scale-125 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                                 <div className="w-full h-full bg-white rounded-full shadow-md border-2 border-white flex items-center justify-center transition-transform group-hover:scale-105">
-                                    <div className="w-7 h-7 rounded-full border border-primary/20 flex items-center justify-center bg-primary/5">
-                                        <div className="w-2 h-2 bg-primary rounded-full shadow-[0_0_8px_rgba(247,103,17,0.5)]" />
+                                    <div className="w-7 h-7 rounded-full border border-black/20 flex items-center justify-center bg-black/5">
+                                        <div className="w-2 h-2 bg-black rounded-full shadow-[0_0_8px_rgba(0,0,0,0.5)]" />
                                     </div>
                                 </div>
 
@@ -105,13 +105,13 @@ const Journey = () => {
                 >
                     <div className="relative w-36 h-36 flex items-center justify-center">
                         <div className="absolute inset-0 rounded-full border-2 border-primary opacity-20 animate-ping" />
-                        <div className="w-full h-full rounded-full border-[10px] border-primary/5 flex items-center justify-center p-3 bg-white/40 backdrop-blur-md shadow-inner">
-                            <div className="w-full h-full rounded-full border-2 border-primary/30 flex items-center justify-center">
-                                <div className="w-8 h-8 bg-primary rounded-full shadow-[0_0_25px_rgba(247,103,17,0.9)]" />
+                        <div className="w-full h-full rounded-full border-[10px] border-black/5 flex items-center justify-center p-3 bg-white/40 backdrop-blur-md shadow-inner">
+                            <div className="w-full h-full rounded-full border-2 border-black/30 flex items-center justify-center">
+                                <div className="w-8 h-8 bg-black rounded-full shadow-[0_0_25px_rgba(0,0,0,0.9)]" />
                             </div>
                         </div>
                         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-2xl tracking-widest uppercase items-center flex gap-2">
-                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                            <div className="w-1.5 h-1.5 rounded-full bg-black animate-pulse" />
                             Destination
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 {
-  "name": "package",
+  "name": "ipac",
+  "description": "Intellectual Property Awareness Club in Rwanda Coding Academy",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -26,7 +26,7 @@ const Home = () => (
 function App() {
     return (
         <Router>
-            <div className="min-h-screen bg-[#FDFBF7]">
+            <div className="min-h-screen bg-[#F8F8F8]">
                 <ScrollToTop /> {/* Added ScrollToTop component */}
                 <Navbar />
                 {/* Global padding for fixed navbar */}

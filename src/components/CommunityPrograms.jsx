@@ -3,126 +3,105 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const programs = [
     {
-        id: 'gira',
-        title: 'Gira Ubushobozi',
-        subtitle: 'Empowering Future Leaders',
-        intro: "In response to the increase in unemployment due to COVID-19, we designed this program to equip youth with the right combination of soft and professional skills to make them more competent on the job market.",
+        id: 'clinic',
+        title: 'IP Clinic',
+        subtitle: 'Protect Your Innovation',
+        intro: "A dedicated space for RCA students to receive one-on-one guidance on securing their intellectual property and auditing their projects.",
         problem: {
-            title: "The Challenge",
-            text: "In Rwanda, youth accounts for the highest percentage of the population and plays an essential role in developing the country. However, unemployment rates are high among youth due to limited access to information and opportunities, a low level of employable skills, and inadequate access to resources.",
-            image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+            title: "The Ownership Gap",
+            text: "Many students build ground-breaking software and hardware at RCA, but often lose ownership or credit because they don't know how to legally protect their creations from the start.",
+            image: "https://images.unsplash.com/photo-1589216532372-1c2a1a990aef?q=80&w=1200&auto=format&fit=crop"
         },
         solution: {
-            title: "Our Solution",
+            title: "Expert Audits",
             text: [
-                "The Gira Ubushobozi initiative focuses on equipping youth from disadvantaged communities with leadership and key soft skills ranging from professional readiness to problem-solving and goal-setting.",
-                "Complementing technical skills with vital professional and soft skills is critical in ensuring an economic transformation. We aim to see that youth will be more competent on the job market as they navigate the pandemic's impact."
+                "The IP Clinic provides peer-to-peer audits where senior members review student projects for IP potential and risks.",
+                "We offer direct paths to professional legal mentoring, ensuring that every innovative idea born on campus has a fortress of protection around it."
             ],
-            image: "https://images.unsplash.com/photo-1542601906-90da274fcffa?q=80&w=1200&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
         },
         stories: [
             {
-                title: "Meet Claudine",
-                subtitle: "From Self-Doubt to CEO",
+                title: "Meet Eric",
+                subtitle: "Securing the Future",
                 sections: [
-                    { title: "Before", text: "Claudine underestimated herself and struggled to find a job even though she had completed a short six-month training course in mining." },
-                    { title: "After", text: "Claudine became confident to speak to people, approached a CEO for an internship, and now runs her own mining business employing five people." }
+                    { title: "Before", text: "Eric built a unique compression algorithm but was afraid to share it publicly for fear of it being stolen." },
+                    { title: "After", text: "IPAC helped him navigate the copyright process. Now his project is on GitHub with a solid license and protection." }
                 ],
-                quote: "Resonate workshop built my capacity to speak up.",
-                videoThumbnail: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1200&auto=format&fit=crop"
+                quote: "IPAC gave me the confidence to share my code with the world.",
+                videoThumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
             },
             {
-                title: "Meet Sarah",
-                subtitle: "Leading with Confidence",
+                title: "Meet Sonia",
+                subtitle: "Licensed to Thrill",
                 sections: [
-                    { title: "Challenge", text: "Sarah felt invisible in team meetings and hesitated to share her innovative ideas." },
-                    { title: "Growth", text: "She learned to articulate her vision clearly and now leads a team of twenty engineers." }
+                    { title: "Challenge", text: "Sonia's library was being used without credit. She didn't know how to enforce her rights." },
+                    { title: "Growth", text: "Through the clinic, she learned about license enforcement and successfully rebranded her library's terms." }
                 ],
-                quote: "I no longer wait for permission to lead.",
-                videoThumbnail: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+                quote: "I finally feel like I own my intellectual labor.",
+                videoThumbnail: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1200&auto=format&fit=crop"
             }
         ]
     },
     {
-        id: 'stem',
-        title: 'Rise and STEM',
-        subtitle: 'Bridging the Gender Gap',
-        intro: "Rise and STEM is dedicated to encouraging girls to pursue careers in Science, Technology, Engineering, and Mathematics through hands-on training and mentorship.",
+        id: 'copyright',
+        title: 'Copyright & Licensing',
+        subtitle: 'Navigating Open Source',
+        intro: "Workshops focused on choosing the right licenses for software and creative assets to balance sharing and protection.",
         problem: {
-            title: "The Gap",
-            text: "Women are significantly underrepresented in STEM fields. This gap starts early, with girls often discouraged from pursuing math and science due to societal stereotypes and a lack of female role models.",
-            image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop"
+            title: "License Confusion",
+            text: "The world of Open Source is powerful but legally complex. Many developers use licenses like MIT or GPL without truly understanding their implications for future monetization or commercialization.",
+            image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
         },
         solution: {
-            title: "Our Solution",
+            title: "Strategic Licensing",
             text: [
-                "We provide comprehensive STEM workshops that combine technical training with our core leadership curriculum. Girls learn coding, robotics, and engineering principles while also building confidence.",
-                "Partnerships with tech companies provide mentorship and internship opportunities, showing participants a clear pathway to a career in STEM."
+                "We host deep-dive workshops on software licensing, comparing permissive vs. copyleft models to help students make informed decisions.",
+                "Our 'License-First' initiative integrates legal checks directly into the student development lifecycle from day one."
             ],
-            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
         },
         stories: [
             {
-                title: "Meet Angelique",
-                subtitle: "Future Engineer",
+                title: "Meet Kevin",
+                subtitle: "Open Source Advocate",
                 sections: [
-                    { title: "Challenge", text: "Angelique loved math but was told engineering was for boys." },
-                    { title: "Breakthrough", text: "After building her first robot, she realized her potential was limitless." }
+                    { title: "Challenge", text: "Kevin wanted to contribute to big projects but was intimidated by the legal requirements of CLAs." },
+                    { title: "Breakthrough", text: "After our licensing series, he now manages IP for three major student organizations." }
                 ],
-                quote: "I am building the future, one line of code at a time.",
-                videoThumbnail: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1200&auto=format&fit=crop"
-            },
-            {
-                title: "Meet Diane",
-                subtitle: "Tech Innovator",
-                sections: [
-                    { title: "Start", text: "Diane had never touched a computer before the program." },
-                    { title: "Now", text: "She is developing an app to help local farmers track market prices." }
-                ],
-                quote: "Technology is the tool, but I am the creator.",
-                videoThumbnail: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop"
+                quote: "Understanding the law made me a better developer.",
+                videoThumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
             }
         ]
     },
     {
-        id: 'speak',
-        title: 'Speak for Change',
-        subtitle: 'Amplifying Voices',
-        intro: "Speak for Change outfits women with the public speaking and advocacy skills needed to influence policy and community decisions.",
+        id: 'patent',
+        title: 'Patent Advocacy',
+        subtitle: 'Scaling Your Genius',
+        intro: "Bridging the gap between campus innovation and national registration through advocacy and legal support.",
         problem: {
-            title: "The Silence",
-            text: "Women's voices are often excluded from decision-making processes, from local community councils to national policy forums. This silence means that issues affecting women and families are frequently overlooked.",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop"
+            title: "The Patent Wall",
+            text: "Patenting is often seen as a resource-heavy process reserved for large corporations. Individual student innovators frequently hit a wall when it comes to formal national registration.",
+            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
         },
         solution: {
-            title: "Our Solution",
+            title: "National Linkage",
             text: [
-                "Our advocacy training focuses on effective communication, storytelling, and negotiation. We help women identify the issues they care about and develop strategic campaigns to address them.",
-                "We create direct channels for women to engage with local leaders and policymakers, ensuring their proposals are heard and considered."
+                "We advocate for student-friendly IP policies and act as a bridge between RCA and national IP offices.",
+                "Our program assists high-potential projects in drafting preliminary patent documents and navigating the registration bureaucracy."
             ],
-            image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
-        }
-        ,
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+        },
         stories: [
             {
-                title: "Meet Marie",
-                subtitle: "Community Leader",
+                title: "Meet David",
+                subtitle: "Innovative Hardware",
                 sections: [
-                    { title: "Issue", text: "Her village lacked reliable access to clean water, burdening women and girls." },
-                    { title: "Action", text: "Marie organized a community committee and successfully petitioned for a new well." }
+                    { title: "Issue", text: "David designed a new type of low-cost sensor but didn't know how to patent it." },
+                    { title: "Action", text: "IPAC linked him with a patent attorney. He is now in the filing phase of his application." }
                 ],
-                quote: "My voice has the power to bring clean water to my children.",
-                videoThumbnail: "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=1200&auto=format&fit=crop"
-            },
-            {
-                title: "Meet Grace",
-                subtitle: "Policy Advocate",
-                sections: [
-                    { title: "Problem", text: "Local schools had high dropout rates for girls due to lack of sanitation facilities." },
-                    { title: "Solution", text: "Grace worked with the district council to fund new facilities, increasing attendance by 40%." }
-                ],
-                quote: "Change starts when we refuse to stay silent.",
-                videoThumbnail: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
+                quote: "IPAC turned my school project into a protected asset.",
+                videoThumbnail: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop"
             }
         ]
     }
@@ -138,7 +117,7 @@ const CommunityPrograms = () => {
     }, [activeTab]);
 
     return (
-        <section className="bg-[#FDFBF7] min-h-screen font-sans text-gray-900 pb-16">
+        <section className="bg-[#F8F8F8] min-h-screen font-sans text-gray-900 pb-16">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 pt-12">
 
                 {/* Minimalist Tabs - Reduced Spacing */}

@@ -5,9 +5,8 @@ import { useSearchParams } from 'react-router-dom';
 const tabs = [
     { id: 'work', label: 'Our Work' },
     { id: 'impact', label: 'Our Impact' },
-    { id: 'partners', label: 'Our Partners' },
     { id: 'team', label: 'Our Team' },
-    { id: 'story', label: '10-Year Journey' },
+    { id: 'story', label: 'Our Journey' },
 ];
 
 const AboutPage = () => {
@@ -21,23 +20,23 @@ const AboutPage = () => {
     const impactStories = [
         {
             name: "Louise",
-            quote: "The hummingbird story inspired me to think of how I could change my situation.",
-            role: "Resonate Alumni"
+            quote: "The club's focus on IP inspired me to protect my project's code from the start.",
+            role: "IPAC Member"
         },
         {
             name: "Marembo",
-            quote: "Before I could just read the curriculum for the girls I mentor, but today I use stories to help them understand.",
+            quote: "I use IP principles to help the students I mentor understand the value of their work.",
             role: "Mentor"
         },
         {
             name: "Martin",
-            quote: "Resonate changed my perspective of leadership, I did not have to be very superior but to be on the same level with the people I lead.",
-            role: "Community Leader"
+            quote: "IPAC changed my perspective on leadership; protecting innovation is a key part of leading a tech team.",
+            role: "Club Lead"
         },
         {
             name: "Adelphine",
-            quote: "After Resonate’s training, I became more daring, and I am more confident in taking new opportunities.",
-            role: "Entrepreneur"
+            quote: "After IPAC’s workshops, I felt confident enough to file for my first copyright.",
+            role: "Student Innovator"
         }
     ];
 
@@ -52,7 +51,7 @@ const AboutPage = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-[#FDFBF7] pt-20 md:pt-24 pb-16 md:pb-20 font-sans">
+        <div className="w-full min-h-screen bg-[#F8F8F8] pt-20 md:pt-24 pb-16 md:pb-20 font-sans">
             <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-24">
 
                 {/* Header Section */}
@@ -118,21 +117,21 @@ const AboutPage = () => {
                         {activeTab === 'story' && (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <h2 className="text-3xl font-bold mb-6">10-Year Journey</h2>
+                                    <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
                                     <div className="space-y-6 text-gray-600 leading-relaxed">
                                         <p>
-                                            Founded with a vision to unlock potential, Resonate started as a small workshop in Rwanda. We realized that while technical skills are essential, confidence and leadership are the catalysts that turn skills into action.
+                                            IPAC (Intellectual Property Awareness Club) was founded at Rwanda Coding Academy to bridge the gap between technical innovation and legal protection. We believe that coding is just the beginning—protecting your creation is what makes it yours.
                                         </p>
                                         <p>
-                                            Over the past decade, we have grown into a leading organization, partnering with over 100 institutions to integrate our leadership methodology into their programs. Our story is one of resilience, growth, and the unshakeable belief in the power of women and youth.
+                                            Over the past 5 months, we have built a community of young innovators who are passionate about IP rights. We provide the resources and knowledge needed to navigate the complex world of copyrights, patents, and trademarks.
                                         </p>
                                     </div>
 
                                     <div className="grid grid-cols-3 gap-6 mt-10">
                                         {[
-                                            { label: "Years", value: "10+" },
-                                            { label: "Partners", value: "100+" },
-                                            { label: "Impacted", value: "20k+" }
+                                            { label: "Months", value: "5" },
+                                            { label: "Members", value: "50+" },
+                                            { label: "Events", value: "10+" }
                                         ].map((stat, i) => (
                                             <div key={i}>
                                                 <div className="text-2xl font-black text-black">{stat.value}</div>
@@ -143,7 +142,7 @@ const AboutPage = () => {
                                 </div>
                                 <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200"
+                                        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200"
                                         alt="Our Story"
                                         className="w-full h-full object-cover"
                                     />
@@ -156,9 +155,9 @@ const AboutPage = () => {
                                 <h2 className="text-3xl font-bold mb-10 text-center">Our Work</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                     {[
-                                        { title: "Leadership Workshops", desc: "Intensive 2-day training sessions." },
-                                        { title: "Training of Trainers", desc: "Scaling impact through partners." },
-                                        { title: "Custom Integration", desc: "Tailored curricula for organizations." }
+                                        { title: "IP Clinic", desc: "One-on-one student consultations and audits." },
+                                        { title: "Licensing Series", desc: "Workshops on Open Source and copyright." },
+                                        { title: "National Advocacy", desc: "Bridging campus innovation with national IP offices." }
                                     ].map((item, i) => (
                                         <div key={i} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
                                             <div className="w-12 h-12 bg-gray-900 rounded-full mb-6 flex items-center justify-center text-white">
@@ -178,33 +177,33 @@ const AboutPage = () => {
                             <div className="space-y-20">
                                 {/* Key Stats Section */}
                                 <div className="text-center">
-                                    <h2 className="text-3xl font-bold mb-10">Since Our Founding</h2>
+                                    <h2 className="text-3xl font-bold mb-10">Our Growth</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
                                         <div className="text-center md:text-right md:border-r md:border-gray-300 md:pr-12 py-4">
-                                            <div className="text-6xl md:text-7xl font-black text-primary mb-2">40,000<span className="text-4xl align-top">+</span></div>
-                                            <div className="text-gray-500 font-bold uppercase tracking-widest text-sm">Participants Empowered</div>
+                                            <div className="text-6xl md:text-7xl font-black text-primary mb-2">50<span className="text-4xl align-top">+</span></div>
+                                            <div className="text-gray-500 font-bold uppercase tracking-widest text-sm">Active Members</div>
                                         </div>
                                         <div className="text-center md:text-left md:pl-4 py-4">
-                                            <div className="text-6xl md:text-7xl font-black text-black mb-2">120<span className="text-4xl align-top">+</span></div>
-                                            <div className="text-gray-500 font-bold uppercase tracking-widest text-sm">Partners in East Africa</div>
+                                            <div className="text-6xl md:text-7xl font-black text-black mb-2">10<span className="text-4xl align-top">+</span></div>
+                                            <div className="text-gray-500 font-bold uppercase tracking-widest text-sm">Campus Partners</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Survey Results */}
                                 <div className="bg-black text-white rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
-                                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] pointer-events-none -mt-40 -mr-40" />
+                                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] pointer-events-none -mt-40 -mr-40" />
                                     <div className="relative z-10">
-                                        <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">2024 Survey Results</h3>
+                                        <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">2026 Member Feedback</h3>
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                                             {[
-                                                { val: "91%", text: "Increase in Leadership" },
-                                                { val: "46%", text: "Started Businesses" },
-                                                { val: "88%", text: "Took Leadership Roles" },
-                                                { val: "37%", text: "Advanced Professionally" }
+                                                { val: "95%", text: "Increased IP Awareness" },
+                                                { val: "60%", text: "Planned IP Filings" },
+                                                { val: "85%", text: "Workshop Satisfaction" },
+                                                { val: "100%", text: "Peer-to-Peer Support" }
                                             ].map((stat, i) => (
                                                 <div key={i} className="text-center group">
-                                                    <div className="text-4xl lg:text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">{stat.val}</div>
+                                                    <div className="text-4xl lg:text-5xl font-bold text-white mb-3 group-hover:scale-110 transition-transform duration-300">{stat.val}</div>
                                                     <div className="text-sm text-gray-400 font-medium leading-relaxed px-4">{stat.text}</div>
                                                 </div>
                                             ))}
@@ -260,12 +259,12 @@ const AboutPage = () => {
 
                                 {/* Methodology */}
                                 <div>
-                                    <h3 className="text-2xl font-bold mb-8 text-center">How We Measure Impact</h3>
+                                    <h3 className="text-2xl font-bold mb-8 text-center">How We Share Knowledge</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                         {[
-                                            { title: "Quantitative Data", text: "We measure increase in leadership capacity through pre- and post- surveys, and rigorous one-year follow-ups." },
-                                            { title: "Qualitative Data", text: "We consistently evaluate our content, style, and team directly from our participants and partners." },
-                                            { title: "Human-Centered Design", text: "We actively seek input from participants and Program partners when designing new programs." }
+                                            { title: "Weekly Meetups", text: "We gather every week to discuss recent IP trends and student innovations." },
+                                            { title: "Guest Lectures", text: "Inviting IP lawyers and professionals to share real-world practices." },
+                                            { title: "Open Source Advocate", text: "Promoting the balance between open source and intellectual property." }
                                         ].map((method, i) => (
                                             <div key={i} className="bg-[#F9F9F9] p-8 rounded-3xl">
                                                 <h4 className="font-bold text-lg mb-4">{method.title}</h4>
@@ -275,34 +274,15 @@ const AboutPage = () => {
                                     </div>
                                 </div>
 
-                                {/* RCT Highlight */}
-                                <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 flex flex-col md:flex-row gap-10 items-center">
-                                    <div className="flex-1">
-                                        <span className="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Rigorous Evidence</span>
-                                        <h3 className="text-3xl font-bold mb-4">Randomized Control Trial (RCT)</h3>
-                                        <p className="text-gray-600 mb-6 leading-relaxed">
-                                            In 2016 and 2019, we partnered with researchers from UC Berkeley and Georgetown University to conduct rigorous RCTs. The results showed that storytelling for leadership has strong impacts on psychosocial outcomes, and professional development drives economic results.
-                                        </p>
-                                        <div className="flex flex-wrap gap-4">
-                                            <button className="text-black font-bold border-b-2 border-black hover:text-primary hover:border-primary transition-colors pb-1">Read Executive Summary</button>
-                                            <button className="text-black font-bold border-b-2 border-black hover:text-primary hover:border-primary transition-colors pb-1">Read Full Report</button>
-                                        </div>
-                                    </div>
-                                    <div className="w-full md:w-1/3 bg-gray-100 h-64 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Research" className="absolute inset-0 w-full h-full object-cover opacity-80" />
-                                        <div className="relative z-10 bg-white/90 backdrop-blur px-6 py-3 rounded-xl font-bold text-sm shadow-lg">2019-2020 Results</div>
-                                    </div>
-                                </div>
-
                                 {/* Learnings */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                                     <div>
                                         <h3 className="text-2xl font-bold mb-6">What We Have Learned</h3>
                                         <div className="space-y-6">
                                             {[
-                                                { title: "Measuring is Hard", text: "Measuring self-confidence is not straightforward. We tested many indicators and remain committed to finding accurate ways to measure personal transformation." },
-                                                { title: "Impact is our Goal", text: "We are impact-driven at our core. We maintain a blended revenue model to maximize both sustainability and impact for underserved women." },
-                                                { title: "It's Important to Ask for Help", text: "We can't do everything alone. We actively seek guidance from partners, participants, and advisors." }
+                                                { title: "IP is Essential", text: "Most students are unaware of their rights. Education is the first step toward a thriving tech ecosystem." },
+                                                { title: "Collaborative Protection", text: "Protecting ideas doesn't mean hiding them. It's about knowing how to share them safely." },
+                                                { title: "Future Ready", text: "RCA students are the future of Rwanda's tech, and IP awareness is a critical life skill for any founder." }
                                             ].map((learning, i) => (
                                                 <div key={i}>
                                                     <h4 className="font-bold text-black mb-2">{learning.title}</h4>
@@ -312,14 +292,14 @@ const AboutPage = () => {
                                         </div>
                                     </div>
 
-                                    {/* Annual Reports List */}
+                                    {/* Reports List */}
                                     <div className="bg-gray-50 p-8 rounded-3xl">
-                                        <h3 className="text-xl font-bold mb-6">Annual Reports</h3>
+                                        <h3 className="text-xl font-bold mb-6">Club Reports</h3>
                                         <ul className="space-y-3">
-                                            {[2023, 2022, 2021, 2020, 2019, 2018, 2016, 2015].map((year) => (
-                                                <li key={year}>
+                                            {["Month 1", "Month 2", "Month 3", "Month 4", "Month 5"].map((month) => (
+                                                <li key={month}>
                                                     <a href="#" className="flex justify-between items-center group py-2 border-b border-gray-200">
-                                                        <span className="text-gray-600 group-hover:text-black transition-colors">{year} Annual Report</span>
+                                                        <span className="text-gray-600 group-hover:text-black transition-colors">{month} Activity Report</span>
                                                         <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                                                     </a>
                                                 </li>

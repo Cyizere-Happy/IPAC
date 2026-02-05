@@ -3,20 +3,19 @@ import Journey from '../components/Journey';
 
 const ImpactPage = () => {
     return (
-        <div className="w-full min-h-screen bg-[#FDFBF7] pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-6 lg:px-12 xl:px-24">
+        <div className="w-full min-h-screen bg-[#F8F8F8] pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-6 lg:px-12 xl:px-24">
 
             {/* 10 Years of Impact Summary */}
             <div className="max-w-4xl mb-6">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6">
-                    10 Years of Impact Summary
+                    Our 5-Month Journey
                 </h1>
                 <div className="flex flex-col gap-4 md:gap-6 text-gray-600 leading-relaxed text-sm md:text-base">
                     <p>
-                        In 2023 as Resonate celebrated 10 Years of impacting lives and communities, we reflected on milestones that shaped the organization and celebrated through a series of events in
-                        <strong> New York, Dallas, San Francisco, Boston, and Kigali.</strong> During the celebration, Resonate also showcased the social and economic impact of its leadership and soft skills programs on women's and girls' lives and highlighted future goals.
+                        Since our inception 5 months ago, IPAC has been at the forefront of Intellectual Property awareness in Rwanda Coding Academy. We've been working tirelessly to educate and inspire the next generation of innovators.
                     </p>
                     <p>
-                        A lot has been achieved; Resonate has expanded its programs to hard-to-reach rural communities of Rwanda, validated its impact through the Randomized Control Trial (RCT), built strong and meaningful partnerships with 100+ organizations, created jobs, and so much more.
+                        Our mission is to ensure every student understands their creative rights and the importance of IP in the digital age.
                     </p>
                 </div>
             </div>
@@ -29,15 +28,13 @@ const ImpactPage = () => {
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 md:mb-8 gap-3">
                     <div>
                         <h2 className="text-xl md:text-2xl font-bold text-black">Impact Stories</h2>
-                        <p className="text-gray-500 text-xs md:text-sm mt-1">Hear directly from the women and girls we've partnered with.</p>
+                        <p className="text-gray-500 text-xs md:text-sm mt-1">Hear directly from our student innovators and partners.</p>
                     </div>
                     <a
-                        href="https://www.youtube.com/@ResonateImpact"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#"
                         className="text-primary text-xs md:text-sm font-bold hover:underline flex items-center gap-1.5"
                     >
-                        YouTube <span>↗</span>
+                        Learn More <span>↗</span>
                     </a>
                 </div>
 
@@ -46,7 +43,7 @@ const ImpactPage = () => {
                         <div key={item} className="group cursor-pointer">
                             <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-200 mb-3 shadow-sm">
                                 <img
-                                    src={`https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop`}
+                                    src={`https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=800&auto=format&fit=crop`}
                                     alt="Story thumbnail"
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -56,8 +53,8 @@ const ImpactPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <h3 className="font-bold text-sm md:text-base text-black group-hover:text-primary transition-colors">Economic Impact {item}</h3>
-                            <p className="text-xs text-gray-500">Village Savings, Rwanda</p>
+                            <h3 className="font-bold text-sm md:text-base text-black group-hover:text-primary transition-colors">IP Workshop {item}</h3>
+                            <p className="text-xs text-gray-500">RCA Campus, Rwanda</p>
                         </div>
                     ))}
                 </div>
@@ -66,7 +63,7 @@ const ImpactPage = () => {
             {/* Premium Call to Action Section */}
             <div className="mt-16 md:mt-24 mb-12 md:mb-16 relative group cursor-default">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary/80 rounded-[2rem] md:rounded-[2.5rem] blur-2xl opacity-10 group-hover:opacity-20 transition-opacity duration-700" />
-                <div className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 shadow-[0_20px_50px_rgba(247,103,17,0.05)] overflow-hidden">
+                <div className="relative bg-white/60 backdrop-blur-xl border border-white/40 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] overflow-hidden">
                     <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-primary/5 rounded-full -mr-24 md:-mr-32 -mt-24 md:-mt-32 blur-3xl animate-pulse" />
                     <div className="absolute bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-primary/10 rounded-full -ml-24 md:-ml-32 -mb-24 md:-mb-32 blur-3xl" />
 
@@ -78,13 +75,13 @@ const ImpactPage = () => {
                             Make an impact <span className="text-primary italic">together.</span>
                         </h2>
                         <p className="text-gray-500 text-sm md:text-base lg:text-lg max-w-lg leading-relaxed font-medium">
-                            Your contribution helps us close the confidence gap and empower the next generation of women leaders.
+                            Join us in our mission to raise awareness about intellectual property and protect student innovations.
                         </p>
                     </div>
 
                     <div className="z-10 w-full md:w-auto">
                         <button className="w-full md:w-auto bg-black text-white px-8 md:px-12 py-4 md:py-5 rounded-xl md:rounded-2xl font-bold shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:bg-gray-800 transition-all active:scale-95 group/btn flex items-center justify-center gap-2 md:gap-3 text-sm md:text-base">
-                            Donate to Resonate
+                            Join IPAC
                             <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-white/20 flex items-center justify-center group-hover/btn:translate-x-1 transition-transform">
                                 <span className="text-xs md:text-sm">→</span>
                             </div>

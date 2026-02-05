@@ -7,9 +7,9 @@ const Footer = () => {
 
                 {/* Brand Column */}
                 <div className="col-span-1 sm:col-span-2 md:col-span-1">
-                    <h2 className="text-xl md:text-2xl font-bold tracking-tight text-primary mb-4 md:mb-6">resonate</h2>
+                    <h2 className="text-xl md:text-2xl font-bold tracking-tight text-white mb-4 md:mb-6">IPAC</h2>
                     <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-                        Closing the confidence gap and empowering women to lead with authority.
+                        Intellectual Property Awareness Club at Rwanda Coding Academy.
                     </p>
                 </div>
 
@@ -39,11 +39,11 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-6 md:pt-8 border-t border-gray-800 gap-4">
-                <p className="text-gray-500 text-xs text-center md:text-left">© 2024 Resonate Inc. All rights reserved.</p>
+                <p className="text-gray-500 text-xs text-center md:text-left">© 2026 IPAC. All rights reserved.</p>
                 <div className="flex gap-4 md:gap-6">
-                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer"></div>
-                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer"></div>
-                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer"></div>
+                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-white transition-colors cursor-pointer"></div>
+                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-white transition-colors cursor-pointer"></div>
+                    <div className="w-5 h-5 bg-gray-800 rounded-full hover:bg-white transition-colors cursor-pointer"></div>
                 </div>
             </div>
         </footer>

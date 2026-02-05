@@ -1,18 +1,18 @@
 export const blogPosts = [
     {
         id: 1,
-        title: "The Power of Storytelling in Leadership",
-        category: "Leadership",
-        author: "Norette Turimuci",
-        date: "October 15, 2024",
+        title: "The Importance of Protecting Your Code",
+        category: "Intellectual Property",
+        author: "Martin RCA",
+        date: "February 15, 2026",
         readTime: "5 Min",
         views: "1.2k",
         likes: 450,
-        image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1200&auto=format&fit=crop",
-        summary: "Why narrative skills are the missing link in technical training and how they empower women to take charge.",
+        image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop",
+        summary: "Why IP awareness is the missing link in technical training and how it empowers student developers to own their work.",
         content: `
             <h3 id="introduction">Introduction</h3>
-            <p>In the world of development and professional growth, we often focus on hard skills—coding, finance, project management. But what happens when a woman has these skills but lacks the confidence to speak up in a meeting or pitch her business idea? At Resonate, we believe storytelling is the bridge between potential and action.</p>
+            <p>In the world of development and professional growth, we often focus on hard skills—coding, finance, project management. But what happens when a woman has these skills but lacks the confidence to speak up in a meeting or pitch her business idea? At IPAC, we believe storytelling is the bridge between potential and action.</p>
             
             <h3 id="why-storytelling">Why Storytelling?</h3>
             <p>Storytelling is not just about entertainment; it is a leadership tool. When women learn to articulate their values and experiences through personal narrative, they build self-efficacy. They shift from seeing themselves as passive participants to active leaders in their communities.</p>
@@ -36,21 +36,21 @@ export const blogPosts = [
     },
     {
         id: 2,
-        title: "Breaking Barriers: Women in Tech",
-        category: "Empowerment",
-        author: "Team Resonate",
-        date: "September 28, 2024",
+        title: "Innovating Safely: IP for Founders",
+        category: "Protection",
+        author: "IPAC Team",
+        date: "January 28, 2026",
         readTime: "4 Min",
         views: "980",
         likes: 320,
-        image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1200&auto=format&fit=crop",
-        summary: "How mentorship and soft skills training are closing the gender gap in East Africa's technology sector.",
+        image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1200&auto=format&fit=crop",
+        summary: "How intellectual property workshops are securing the future of RCA's technology startups.",
         content: `
             <h3 id="current-landscape">The Current Landscape</h3>
             <p>The technology sector in East Africa is booming, yet women remain underrepresented. While access to education is improving, cultural norms and imposter syndrome often hold talented women back from pursuing high-level careers in tech.</p>
 
             <h3 id="role-of-soft-skills">The Role of Soft Skills</h3>
-            <p>Coding bootcamps are essential, but they are not enough. Our partners have found that technical graduates often struggle with negotiation, public speaking, and leadership. This is where Resonate comes in. By integrating leadership modules into tech training, we prepare women to not just enter the workforce, but to lead it.</p>
+            <p>Coding bootcamps are essential, but they are not enough. Our partners have found that technical graduates often struggle with negotiation, public speaking, and leadership. This is where IPAC comes in. By integrating leadership modules into tech training, we prepare women to not just enter the workforce, but to lead it.</p>
 
             <h3 id="mentorship-matters">Mentorship Matters</h3>
             <p>Seeing is believing. Our programs connect participants with mentors who look like them and have walked the same path. This representation shatters the myth that tech is a "man's world."</p>
@@ -67,18 +67,18 @@ export const blogPosts = [
     },
     {
         id: 3,
-        title: "Community Impact Report 2023",
+        title: "IPAC Progress Report: 5 Months In",
         category: "Impact",
         author: "Impact Team",
-        date: "August 10, 2024",
+        date: "February 10, 2026",
         readTime: "7 Min",
         views: "2.1k",
         likes: 600,
-        image: "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1200&auto=format&fit=crop",
-        summary: "A deep dive into our latest data: 40,000 participants, 120 partners, and a decade of changing lives.",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+        summary: "A deep dive into our latest data: 50+ members, 10+ events, and the journey so far.",
         content: `
             <h3 id="milestone-year">A Milestone Year</h3>
-            <p>2023 was a year of exponential growth for Resonate. We expanded our reach to new regions and deepened our impact in Rwanda. Our data shows a direct correlation between our workshops and increased income for participants.</p>
+            <p>2023 was a year of exponential growth for IPAC. We expanded our reach to new regions and deepened our impact in Rwanda. Our data shows a direct correlation between our workshops and increased income for participants.</p>
 
             <h3 id="by-the-numbers">By The Numbers</h3>
             <p>We reached over 5,000 women this year alone. 68% of our graduates reported taking on a new leadership role within six months of training. 45% started their own micro-enterprises.</p>
@@ -98,18 +98,18 @@ export const blogPosts = [
     },
     {
         id: 4,
-        title: "The Art of Negotiation",
-        category: "Professional Development",
-        author: "Training Lead",
-        date: "July 22, 2024",
+        title: "Mastering IP: Copyright vs Patents",
+        category: "Education",
+        author: "Legal Lead",
+        date: "December 22, 2025",
         readTime: "6 Min",
         views: "1.5k",
         likes: 400,
-        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop",
-        summary: "Practical tips for women to negotiate salaries, partnerships, and opportunities with confidence.",
+        image: "https://images.unsplash.com/photo-1589216532372-1c2a1a990aef?q=80&w=1200&auto=format&fit=crop",
+        summary: "Practical tips for students to distinguish between different forms of intellectual property.",
         content: `
             <h3 id="why-dont-ask">Why We Don't Ask</h3>
-            <p>Research shows that women negotiate less often than men, often due to social conditioning that equates assertiveness with aggression. At Resonate, we reframe negotiation as a collaborative problem-solving process.</p>
+            <p>Research shows that women negotiate less often than men, often due to social conditioning that equates assertiveness with aggression. At IPAC, we reframe negotiation as a collaborative problem-solving process.</p>
 
             <h3 id="preparation">Preparation is Key</h3>
             <p>Successful negotiation starts long before the conversation. We teach our participants how to research market rates, identify their unique value proposition, and anticipate objections.</p>
@@ -129,15 +129,15 @@ export const blogPosts = [
     },
     {
         id: 5,
-        title: "Leading Through Crisis",
+        title: "Leading an Innovation Team",
         category: "Leadership",
-        author: "Norette Turimuci",
-        date: "June 10, 2024",
+        author: "Martin RCA",
+        date: "June 10, 2025",
         readTime: "5 Min",
         views: "850",
         likes: 210,
-        image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200",
-        summary: "Strategies for maintaining team cohesion and purpose during challenging times.",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200",
+        summary: "Strategies for maintaining team cohesion and purpose during building phases.",
         content: `
             <h3 id="clear-comm">Clear Communication</h3>
             <p>In times of uncertainty, silence creates anxiety. We discuss how leaders can communicate transparency and empathy to keep teams aligned.</p>
@@ -154,15 +154,15 @@ export const blogPosts = [
     },
     {
         id: 6,
-        title: "Youth Voices: The Future of Africa",
-        category: "Empowerment",
-        author: "Guest Writer",
-        date: "May 15, 2024",
+        title: "Student Voices: The Future of RCA",
+        category: "Awareness",
+        author: "Student Writer",
+        date: "May 15, 2025",
         readTime: "4 Min",
         views: "1.1k",
         likes: 380,
-        image: "https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?q=80&w=1200",
-        summary: "Highlighting the innovative projects led by our youth program graduates across Rwanda.",
+        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200",
+        summary: "Highlighting the innovative projects led by our club members across RCA.",
         content: `
             <h3 id="innovation">Innovation at the Grassroots</h3>
             <p>From sustainable farming to tech startups, young Rwandans are creating solutions for local challenges. This article spotlights three incredible youth-led ventures.</p>
@@ -176,15 +176,15 @@ export const blogPosts = [
     },
     {
         id: 7,
-        title: "Measuring Soft Skills",
+        title: "Measuring Club Impact",
         category: "Impact",
         author: "Data Team",
-        date: "April 02, 2024",
+        date: "April 02, 2025",
         readTime: "8 Min",
         views: "900",
         likes: 150,
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200",
-        summary: "Our unique approach to quantifying confidence, agency, and leadership growth.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+        summary: "Our unique approach to quantifying IP awareness and leadership growth at RCA.",
         content: `
             <h3 id="challenge">The Challenge</h3>
             <p>How do you measure a feeling? We explore the difficulties and solutions in evaluating psychosocial outcomes.</p>
@@ -228,7 +228,7 @@ export const blogPosts = [
         views: "780",
         likes: 245,
         image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200",
-        summary: "How we scale our impact by equipping partners to deliver Resonate's curriculum.",
+        summary: "How we scale our impact by equipping partners to deliver IPAC's curriculum.",
         content: `
             <h3 id="scalability">Scalability</h3>
             <p>To reach more women, we can't do it all ourselves. We teach others to teach.</p>

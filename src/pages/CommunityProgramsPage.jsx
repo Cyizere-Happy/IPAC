@@ -1,10 +1,9 @@
-import React from 'react';
-import CommunityPrograms from '../components/CommunityPrograms';
+import IPProjectShowcase from '../components/IPProjectShowcase';
 
 const CommunityProgramsPage = () => {
     return (
-        <div className="w-full min-h-screen bg-[#FDFBF7]">
-            <CommunityPrograms />
+        <div className="w-full min-h-screen">
+            <IPProjectShowcase />
         </div>
     );
 };
