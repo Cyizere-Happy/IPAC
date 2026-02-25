@@ -9,8 +9,6 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import IPHero from "./components/IPHero";
 import Services from "./components/Services";
-import IPProjectShowcase from "./components/IPProjectShowcase";
-import Journey from "./components/Journey";
 import IPMissionArchitecture from "./components/IPMissionArchitecture";
 import Footer from "./components/Footer";
 import ImpactPage from "./pages/ImpactPage";
@@ -18,14 +16,13 @@ import CommunityProgramsPage from "./pages/CommunityProgramsPage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import CreateBlogPage from "./pages/CreateBlogPage";
 import GalleryPage from "./pages/GalleryPage";
 
 const Home = () => (
   <>
     <IPHero />
     <Services />
-    <IPProjectShowcase />
-    <Journey />
     <IPMissionArchitecture />
   </>
 );
@@ -53,6 +50,7 @@ const AppContent = () => {
           <Route path="/programs" element={<CommunityProgramsPage />} />
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/create" element={<CreateBlogPage />} />
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
