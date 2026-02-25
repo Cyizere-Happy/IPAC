@@ -107,18 +107,15 @@ const GalleryPage = () => {
 };
 
 const CurvedMarquee = ({ images }) => {
+  // Defensive check for images array
+  if (!images || images.length === 0) return null;
+
   // Duplicate images for seamless loop
   const marqueeImages = [...images, ...images, ...images];
 
   return (
     <div className="flex justify-center overflow-hidden w-full">
       <div className="relative w-full max-w-[120%] flex gap-4 md:gap-8 py-6 md:py-10 items-center justify-center">
-        {/*
-                   We simulate the curve by applying individual rotations to cards
-                   scrolling horizontally.
-                   Actually, a simpler "fake" 3D curve is often just scaling the sides down
-                   and rotating them inwards.
-                */}
         <div
           className="flex animate-marquee gap-4 md:gap-8 items-center"
           style={{ width: "max-content" }}
@@ -158,11 +155,15 @@ const CurvedMarquee = ({ images }) => {
 };
 
 const Card = ({ item }) => {
+  const defaultImage =
+    "https://images.unsplash.com/photo-1579546678183-a8484995816e?q=80&w=800&auto=format&fit=crop";
+  const imageUrl = item.image ? urlFor(item.image).url() : defaultImage;
+
   return (
     <div className="w-[220px] h-[300px] md:w-[300px] md:h-[400px] flex-shrink-0 relative group perspective-origin-center transform transition-transform hover:-translate-y-4 duration-300">
       <div className="w-full h-full rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl bg-gray-900 border-2 md:border-4 border-white/50 relative">
         <img
-          src={urlFor(item.image).url()}
+          src={imageUrl}
           alt="Gallery"
           className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
         />
@@ -172,7 +173,8 @@ const Card = ({ item }) => {
             IPAC Moments
           </p>
           <p className="text-[10px] md:text-xs text-white/90 leading-relaxed line-clamp-2">
-            {item.description}
+            {item.description ||
+              "Celebrating IP awareness and innovation at RCA."}
           </p>
         </div>
       </div>
