@@ -19,9 +19,10 @@ const IPHero = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 group-hover:scale-105"
           style={{
-            backgroundImage: overview
-              ? `url('${urlFor(overview.image).url()}')`
-              : `url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000')`,
+            backgroundImage:
+              overview && overview.image
+                ? `url('${urlFor(overview.image).url()}')`
+                : `url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000')`,
           }}
         >
           <div className="absolute inset-0 bg-black/20" />
