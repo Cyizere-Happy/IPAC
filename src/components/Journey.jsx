@@ -178,15 +178,15 @@ const Journey = () => {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {workshops.map((w, i) => (
+          <div className="flex justify-center">
+            {workshops.slice(0, 1).map((w, i) => (
               <motion.div
                 key={w._id || i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group cursor-pointer"
+                className="group cursor-pointer max-w-2xl w-full"
               >
                 <div className="aspect-[16/9] rounded-[2rem] overflow-hidden mb-6 relative shadow-lg">
                   {w.image ? (
