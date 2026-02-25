@@ -11,11 +11,9 @@ const BlogPage = () => {
   useEffect(() => {
     console.log("Fetching blogs from Sanity...");
     const timeout = setTimeout(() => {
-      if (loading) {
-        console.warn(
-          "Fetch is taking longer than expected. Possible CORS or network issue.",
-        );
-      }
+      console.warn(
+        "Fetch is taking longer than expected. Possible CORS or network issue.",
+      );
     }, 5000);
 
     client
@@ -31,7 +29,7 @@ const BlogPage = () => {
         setLoading(false);
       })
       .finally(() => clearTimeout(timeout));
-  }, [loading]);
+  }, []); // Fix: emptied dependency array to prevent loop
 
   if (loading)
     return (
@@ -71,6 +69,9 @@ const BlogPage = () => {
   const featuredPost = blogs[0];
   const otherPosts = blogs.slice(1);
 
+  const defaultImage =
+    "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop";
+
   return (
     <div className="min-h-screen bg-[#FDFBF7] pt-20 md:pt-24 pb-16 md:pb-20 font-sans">
       <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-24">
@@ -108,7 +109,11 @@ const BlogPage = () => {
           >
             <div className="h-48 md:h-64 lg:h-96 rounded-2xl md:rounded-3xl overflow-hidden relative w-full">
               <img
-                src={urlFor(featuredPost.image).url()}
+                src={
+                  featuredPost.image
+                    ? urlFor(featuredPost.image).url()
+                    : defaultImage
+                }
                 alt={featuredPost.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -118,9 +123,13 @@ const BlogPage = () => {
             </div>
             <div className="px-2 md:pr-4">
               <div className="flex gap-3 md:gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 md:mb-4">
-                <span>{new Date(featuredPost.date).toLocaleDateString()}</span>
+                <span>
+                  {featuredPost.date
+                    ? new Date(featuredPost.date).toLocaleDateString()
+                    : "No Date"}
+                </span>
                 <span>•</span>
-                <span>{featuredPost.readingTime} Read</span>
+                <span>{featuredPost.readingTime || "5 min"} Read</span>
               </div>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 group-hover:text-primary transition-colors leading-tight">
                 {featuredPost.title}
@@ -163,17 +172,21 @@ const BlogPage = () => {
                 <div className="bg-white p-3 md:p-5 rounded-2xl md:rounded-3xl h-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300">
                   <div className="h-48 md:h-56 rounded-xl md:rounded-2xl overflow-hidden mb-4 md:mb-6 relative">
                     <img
-                      src={urlFor(post.image).url()}
+                      src={post.image ? urlFor(post.image).url() : defaultImage}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-2 md:top-3 left-2 md:left-3 bg-black/50 backdrop-blur text-white px-2 md:px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
-                      {post.tag}
+                      {post.tag || "Updates"}
                     </div>
                   </div>
                   <div className="flex-1 flex flex-col">
                     <div className="flex justify-between items-center text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 md:mb-3">
-                      <span>{new Date(post.date).toLocaleDateString()}</span>
+                      <span>
+                        {post.date
+                          ? new Date(post.date).toLocaleDateString()
+                          : "Recent"}
+                      </span>
                       <span>{post.readingTime}</span>
                     </div>
                     <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 group-hover:text-primary transition-colors leading-snug">
