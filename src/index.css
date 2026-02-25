@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --color-primary: #111111;
+    --color-bg-light: #FFFFFF;
+    --font-sans: 'Jost', system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-light);
+    color: #111111;
+}
+
+/* Hide scrollbar for horizontal scrolling elements */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+@theme {
+    --color-primary: #111111;
+    --color-secondary: #444444;
+    --color-accent: #FFFFFF;
+    --color-grey-light: #EEEEEE;
+    --color-grey-dark: #222222;
+}
