@@ -33,10 +33,22 @@ const Journey = () => {
   if (loading) return null;
   if (milestones.length === 0) return null;
 
-  // Path ending exactly at the target center
+  // Path constants
   const targetX = 880;
   const targetY = 100;
-  const pathData = `M 40 380 Q 100 380 ${milestones[0].x} ${milestones[0].y} T ${milestones[1].x} ${milestones[1].y} T ${milestones[2].x} ${milestones[2].y} T ${milestones[3].x} ${milestones[3].y} L ${targetX} ${targetY}`;
+  const startX = 40;
+  const startY = 380;
+
+  // Dynamically build path based on available milestones
+  let pathData = `M ${startX} ${startY} Q 100 380 ${milestones[0].x} ${milestones[0].y}`;
+
+  // Add other points if they exist
+  for (let i = 1; i < milestones.length; i++) {
+    pathData += ` T ${milestones[i].x} ${milestones[i].y}`;
+  }
+
+  // Connect to target
+  pathData += ` L ${targetX} ${targetY}`;
 
   return (
     <div className="w-full overflow-hidden">
