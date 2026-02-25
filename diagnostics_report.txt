@@ -1,0 +1,16 @@
+--- SANITY DIAGNOSTICS ---
+Type "blog": Found 1 documents.
+  Sample document keys: _createdAt, _id, _rev, _type, _updatedAt, date, fullContent, readingTime, summary, title
+  Sample data: {"_createdAt":"2026-02-25T08:31:24Z","_id":"e4dc596f-c170-4e2e-b7df-4195d294a2cb","_rev":"PGqGZxK4L4...
+Type "gallery": Found 1 documents.
+  Sample document keys: _createdAt, _id, _rev, _type, _updatedAt, description, image
+  Sample data: {"_createdAt":"2026-02-25T08:33:21Z","_id":"0a5ebdd6-c3da-4bc6-af79-8f8c100faf55","_rev":"g4rl1HmkpT...
+Type "project": Found 1 documents.
+  Sample document keys: _createdAt, _id, _rev, _type, _updatedAt, description, image, title
+  Sample data: {"_createdAt":"2026-02-25T08:36:24Z","_id":"87c764bc-d222-4e5c-8e1d-207e6a39e0eb","_rev":"PGqGZxK4L4...
+Type "overview": Found 1 documents.
+  Sample document keys: _createdAt, _id, _rev, _type, _updatedAt, image
+  Sample data: {"_createdAt":"2026-02-25T08:37:15Z","_id":"371be30e-dc39-4795-bbf2-1bbdc9bf8f1e","_rev":"g4rl1HmkpT...
+Type "workshop": Found 1 documents.
+  Sample document keys: _createdAt, _id, _rev, _type, _updatedAt, image, location, title
+  Sample data: {"_createdAt":"2026-02-25T08:39:44Z","_id":"e552078b-b4fe-430c-9ed5-1507cca27a58","_rev":"PGqGZxK4L4...
