@@ -22,7 +22,8 @@ const IPHero = () => {
             backgroundImage:
               overview && overview.image
                 ? `url('${urlFor(overview.image).url()}')`
-                : `url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000')`,
+                : "none",
+            backgroundColor: "#111111",
           }}
         >
           <div className="absolute inset-0 bg-black/20" />
