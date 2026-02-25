@@ -218,6 +218,52 @@ const BlogPage = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Create Blog CTA */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mt-20 md:mt-32 bg-black rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 text-center text-white relative overflow-hidden group"
+        >
+          <div className="absolute inset-0 opacity-20 pointer-events-none">
+            <div className="absolute top-0 left-0 w-64 h-64 bg-primary blur-[100px] -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary blur-[120px] translate-x-1/2 translate-y-1/2" />
+          </div>
+
+          <div className="relative z-10 max-w-2xl mx-auto">
+            <span className="text-primary font-bold tracking-[0.3em] text-[10px] md:text-xs uppercase mb-4 block">
+              Share Your Journey
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black italic tracking-tighter uppercase mb-6 md:mb-8 leading-none">
+              Have a story <br className="hidden md:block" /> worth sharing?
+            </h2>
+            <p className="text-gray-400 text-sm md:text-lg mb-8 md:mb-12 font-medium">
+              Join our collective of student innovators and help us document the
+              future of IP protection.
+            </p>
+            <Link
+              to="/blog/create"
+              className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 md:px-12 md:py-5 rounded-full font-black uppercase italic tracking-tighter hover:bg-primary hover:text-white transition-all shadow-2xl hover:scale-105 active:scale-95"
+            >
+              Create Blog
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+              >
+                <path
+                  d="M12 5v14M5 12h14"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
