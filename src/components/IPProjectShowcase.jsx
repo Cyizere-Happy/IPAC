@@ -105,8 +105,12 @@ const IPProjectShowcase = () => {
                   className="w-[280px] md:w-[320px] h-[420px] md:h-[500px] bg-white rounded-[32px] shadow-2xl border-[8px] border-black overflow-hidden relative"
                 >
                   <img
-                    src={urlFor(activeProject.image).url()}
-                    alt={activeProject.title}
+                    src={
+                      activeProject.image
+                        ? urlFor(activeProject.image).url()
+                        : "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                    }
+                    alt={activeProject.title || "Project"}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white text-left">
@@ -122,7 +126,7 @@ const IPProjectShowcase = () => {
 
               {/* Left Side: Innovation Attributes */}
               <div className="grid grid-cols-1 gap-12 w-full pr-[50%] py-12">
-                {activeProject.innovation.map((attr, idx) => (
+                {(activeProject.innovation || []).map((attr, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: -50 }}
@@ -147,7 +151,7 @@ const IPProjectShowcase = () => {
 
               {/* Right Side: Protection Attributes */}
               <div className="grid grid-cols-1 gap-12 w-full pl-[50%] py-12 absolute inset-0">
-                {activeProject.protection.map((attr, idx) => (
+                {(activeProject.protection || []).map((attr, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: 50 }}
